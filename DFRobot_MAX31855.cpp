@@ -1,11 +1,10 @@
 #include <DFRobot_MAX31855.h>
 
-//unsigned char rxbuf[4] = {0};
+unsigned char rxbuf[4] = {0};
 
 DFRobot_MAX31855::DFRobot_MAX31855(){
   Wire.begin();
 }
-DFRobot_MAX31855::~DFRobot_MAX31855(){}
 
 float DFRobot_MAX31855::readCelsius(){
   readData(0x00 ,4);
@@ -24,10 +23,10 @@ float DFRobot_MAX31855::readCelsius(){
 
 void DFRobot_MAX31855::readData(int Reg ,int Num){
   unsigned char i = 0;
-  Wire.beginTransmission(I2C_Addr);
+  Wire.beginTransmission(MAX31855_Addr);
   Wire.write(Reg); 
   Wire.endTransmission();
-  Wire.requestFrom(I2C_Addr, Num);
+  Wire.requestFrom(MAX31855_Addr, Num);
   while (Wire.available()){
     rxbuf[i] = Wire.read();
     i++;

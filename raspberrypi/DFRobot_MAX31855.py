@@ -3,11 +3,11 @@ import time
 import sys
 import wiringpi
 
-MAX31855 = 0x10
+MAX31855_ADDR = 0x10
 
 class DFRobot_MAX31855:
   def __init__(self):
-    self.i2c = wiringpi.wiringPiI2CSetup(MAX31855)
+    self.i2c = wiringpi.wiringPiI2CSetup(MAX31855_ADDR)
   
   def readData(self):
     a = wiringpi.wiringPiI2CReadReg8(self.i2c,0x00)
