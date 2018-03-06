@@ -30,7 +30,7 @@ DFRobot_MAX31855();
  * @brief Read the temperature.
  */
 float readCelsius();
-
+<br>
 ### micropython
 ``` python
 
