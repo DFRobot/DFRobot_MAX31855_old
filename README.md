@@ -18,7 +18,6 @@ This is a Library for MAX31855,the function is to read the temperature by thermo
 ## Methods
 
 ### Arduino
-
 ```C++
 
 #include <DFRobot_MAX31855.h>
@@ -31,7 +30,7 @@ DFRobot_MAX31855();
  * @brief Read the temperature.
  */
 float readCelsius();
-<br>
+```
 ### micropython
 ``` python
 
@@ -47,7 +46,7 @@ MAX31855(i2c)
  * @brief Read the temperature.
  */
 readCelsius()
-
+```
 ### Raspberry Pi
 ``` python
 
@@ -61,7 +60,7 @@ DFRobot_MAX31855()
  * @brief Read the temperature.
  */
 readCelsius()
-
+```
 ## Compatibility
 
 MCU                | Work Well | Work Wrong | Untested  | Remarks
