@@ -7,8 +7,8 @@
   * Copyright   [DFRobot](http://www.dfrobot.com), 2016
   * Copyright   GNU Lesser General Public License
   *
-  * version  V1.0
-  * date  2017-10-9
+  * version  V0.1
+  * date  2018-3-6
   */
   
 #include <DFRobot_MAX31855.h>
@@ -16,10 +16,12 @@
 DFRobot_MAX31855 max31855;
 
 void setup(){
+  /*Set baudrate*/
   Serial.begin(9600);
 }
 
 void loop(){
+  /*Read Celsius*/
   float temp = max31855.readCelsius();
   Serial.println(temp);
   delay(1000);
