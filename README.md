@@ -14,6 +14,7 @@ This is a Library for MAX31855.
 
 ## Summary
 This is a Library for MAX31855,the function is to read the temperature by thermocouple.
+If warming 'ImportError: No module named wiringpi' in raspberry, you need to execute  `pip install wiringpi`.
 
 ## Methods
 
