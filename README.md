@@ -18,6 +18,7 @@ This is a Library for MAX31855,the function is to read the temperature by thermo
 ## Methods
 
 ### Arduino
+
 ```C++
 
 #include <DFRobot_MAX31855.h>
