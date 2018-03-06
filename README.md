@@ -66,9 +66,9 @@ readCelsius()
 MCU                | Work Well | Work Wrong | Untested  | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
 Raspberry Pi |      √       |             |            | 
-FireBeetle-ESP32 |       √      |             |            | 
-FireBeetle-ESP8266 |      √       |             |            | 
-Leonardo |      √       |             |            | 
+FireBeetle-ESP32 |      √       |             |            | 
+FireBeetle-ESP8266 |     √        |             |            | 
+Leonardo |     √        |             |            | 
 
 ## History
 
