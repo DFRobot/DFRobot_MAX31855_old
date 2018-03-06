@@ -32,7 +32,7 @@ DFRobot_MAX31855();
 float readCelsius();
 ```
 ### micropython
-``` python
+```
 
 import MAX31855
 /*
@@ -48,7 +48,7 @@ MAX31855(i2c)
 readCelsius()
 ```
 ### Raspberry Pi
-``` python
+```
 
 import DFRobot_MAX31855
 /*
