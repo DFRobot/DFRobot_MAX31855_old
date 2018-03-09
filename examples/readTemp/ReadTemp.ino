@@ -1,7 +1,7 @@
  /*!
-  * file DFRobot_MAX31855.ino
+  * file ReadTemp.ino
   * 
-  * Connect MAX31855 and Arduino ,then download this example
+  * Connect MAX31855 to arduino via I2C interface,then download this example
   * @n open serial monitor to check the temperature.
   *
   * Copyright   [DFRobot](http://www.dfrobot.com), 2016
@@ -21,8 +21,16 @@ void setup(){
 }
 
 void loop(){
-  /*Read Celsius*/
-  float temp = max31855.readCelsius();
-  Serial.println(temp);
+  int stat;
+  /*Detect I2C device*/
+  stat = max31855.scan();
+  if(!stat){
+    Serial.println("No I2C devices!");
+  }
+  else{
+    /*Read Celsius*/
+    float temp = max31855.readCelsius();
+    Serial.println(temp);
+  }
   delay(1000);
 }

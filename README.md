@@ -28,7 +28,16 @@ If warming 'ImportError: No module named wiringpi' in raspberry, you need to exe
 DFRobot_MAX31855();
 
 /*
+ * @brief Detect I2C device.
+ *
+ * @return true if execute successfully, false otherwise.
+ */
+bool scan();
+
+/*
  * @brief Read the temperature.
+ *
+ * @return temperature if execute successfully.
  */
 float readCelsius();
 ```
@@ -44,7 +53,16 @@ import MAX31855
 MAX31855(i2c)
 
 /*
+ * @brief Detect I2C device.
+ *
+ * @return True if execute successfully, False otherwise.
+ */
+scan()
+
+/*
  * @brief Read the temperature.
+ *
+ * @return temperature if execute successfully.
  */
 readCelsius()
 ```
@@ -59,6 +77,8 @@ DFRobot_MAX31855()
 
 /*
  * @brief Read the temperature.
+ *
+ * @return temperature if execute successfully.
  */
 readCelsius()
 ```

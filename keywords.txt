@@ -12,7 +12,7 @@ DFRobot_MAX31855	KEYWORD1
 #######################################
 readCelsius	KEYWORD2
 DFRobot_MAX31855	KEYWORD2
-
+scan	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################

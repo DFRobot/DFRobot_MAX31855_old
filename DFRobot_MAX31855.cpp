@@ -33,3 +33,19 @@ void DFRobot_MAX31855::readData(int Reg ,int Num){
   }
 }
 
+bool DFRobot_MAX31855::scan(){
+  byte error, address;
+  int nDevices;
+  nDevices = 0;
+  for(address = 1; address < 127; address++ ) {
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+    if (error == 0){
+      nDevices++;
+    }
+  }
+  if (nDevices == 0)
+    return false;
+  else
+    return true;
+}

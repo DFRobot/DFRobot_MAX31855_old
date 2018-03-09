@@ -21,3 +21,10 @@ class MAX31855:
       return -(temp+1)
     temp = ((a << 8) | b) >> 4
     return temp
+
+  def scan(self):
+    a = self.i2c.scan()
+    if(a):
+      return True
+    else:
+      return False
