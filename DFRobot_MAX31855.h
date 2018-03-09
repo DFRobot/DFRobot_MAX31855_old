@@ -10,7 +10,7 @@ class DFRobot_MAX31855{
 public:
   float readCelsius();
   DFRobot_MAX31855();
-  unsigned char scan();
+  bool scan();
 private:
   void readData(int Reg,int Num);
 };
