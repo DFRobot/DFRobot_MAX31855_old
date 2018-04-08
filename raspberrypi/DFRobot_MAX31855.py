@@ -23,8 +23,8 @@ class DFRobot_MAX31855:
     if(a&0x80):
       a = 0xff - a
       b = 0xff - b
-      temp = (((a << 8) | b) >> 2)*0.25
-      return -(temp+1)
+      temp = -((((a << 8) | b) >> 2)+1)*0.25
+      return temp
     temp = (((a << 8) | b) >> 2)*0.25
     return temp
   

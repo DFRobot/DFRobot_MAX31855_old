@@ -1,5 +1,5 @@
-# MAX31855 Library 
-This is a Library for MAX31855.
+# DFRobot_MAX31855 Gravity: Digital High Temperature Sensor (K-type)
+MAX31855 is a temperature measuring device.This converter resolves temperatures to 0.25℃, allows readings as high as +1800℃ and as low as -270℃.
 
 ## Table of Contents
 

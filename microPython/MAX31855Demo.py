@@ -9,7 +9,7 @@ max31855 = MAX31855.MAX31855(i2c)
 while True:
   if(max31855.scan() == True):      #detect i2c device
     temp = max31855.readCelsius()   #Read Celsius
-    print("temperature:%s *C" %temp)
+    print("Temperature:%s ℃" %temp)
   else:                             #No I2C was detected.
     print("No I2C devices!")
   time.sleep(1)

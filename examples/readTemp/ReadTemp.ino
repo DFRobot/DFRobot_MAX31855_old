@@ -30,8 +30,9 @@ void loop(){
   else{
     /*Read Celsius*/
     float temp = max31855.readCelsius();
-    Serial.print("temperature:");
-    Serial.println(temp);
+    Serial.print("Temperature:");
+    Serial.print(temp);
+    Serial.println(" ℃");
   }
   delay(1000);
 }
