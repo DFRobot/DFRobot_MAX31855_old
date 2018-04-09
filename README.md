@@ -8,7 +8,7 @@ MAX31855 is a temperature measuring device.This converter resolves temperatures 
 * [Compatibility](#compatibility)
 * [History](#history)
 * [Credits](#credits)
-
+ 
 <snippet>
 <content>
 
