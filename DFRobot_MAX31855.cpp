@@ -15,7 +15,7 @@ float DFRobot_MAX31855::readCelsius(){
     rxbuf[0] = 0xff - rxbuf[0];
     rxbuf[1] = 0xff - rxbuf[1];
     float temp =  -((((rxbuf[0] << 8)|(rxbuf[1] & 0xfc)) >> 2) + 1) * 0.25;
-    return -(temp+1);
+    return temp;
   }
   float temp =(((rxbuf[0] << 8 )| (rxbuf[1] & 0xfc)) >> 2)*0.25;
   return temp;
