@@ -12,7 +12,7 @@
   */
   
 #include <DFRobot_MAX31855.h>
-
+#include <Wire.h>
 DFRobot_MAX31855 max31855;
 
 void setup(){
@@ -32,7 +32,7 @@ void loop(){
     float temp = max31855.readCelsius();
     Serial.print("Temperature:");
     Serial.print(temp);
-    Serial.println(" ℃");
+    Serial.println(" C");
   }
   delay(1000);
 }
