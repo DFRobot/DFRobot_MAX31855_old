@@ -70,16 +70,15 @@ readCelsius()
 ```python
 
 import DFRobot_MAX31855
-/*
- * @brief The constructor.
- */
+#
+# @brief The constructor.
+
 DFRobot_MAX31855()
 
-/*
- * @brief Read the temperature.
- *
- * @return temperature if execute successfully.
- */
+
+#  @brief Read the temperature.
+# 
+#  @return temperature if execute successfully.
 readCelsius()
 ```
 ## Compatibility
