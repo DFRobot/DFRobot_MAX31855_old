@@ -45,25 +45,21 @@ float readCelsius();
 ```python
 
 import MAX31855
-/*
- * @brief The constructor.
- *
- * @param i2c I2C object.
- */
+
+# @brief The constructor.
+#
+# @param i2c I2C object.
 MAX31855(i2c)
 
-/*
- * @brief Detect I2C device.
- *
- * @return True if execute successfully, False otherwise.
- */
+# @brief Detect I2C device.
+#
+# @return True if execute successfully, False otherwise.
 scan()
 
-/*
- * @brief Read the temperature.
- *
- * @return temperature if execute successfully.
- */
+
+# @brief Read the temperature.
+#
+# @return temperature if execute successfully.
 readCelsius()
 ```
 ### Raspberry Pi
